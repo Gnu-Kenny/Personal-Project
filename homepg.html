@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/b9e07a8161.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny_CV</title>
+    <style>
+        div {
+            display: block;
+        }
+        #left_menu .logo {
+            margin: 0px auto 30px;
+        }
+        
+        
+        #left{
+            
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 999;
+            width: 120px;
+            background: rgba(255,255,255,0);
+            padding: 30px;
+            transition-property: background-color,opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+        #left:hover {
+        background: rgba(255,255,255,0.8);
+        }
+        #left_menu > li {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        #left_menu li a {
+            display: block;
+            color: #000;
+        }
+        li {
+            list-style: none;
+            color: black;
+        }
+        
+        .cs_center{
+            
+            font-size: 11px;
+            line-height: 16px;
+            color: black;
+            font-weight: 400;
+        }
+        
+       
+        .fa, .far, .fas {
+            font-family: 'Font Awesome 5 Free';
+        } 
+        .fa, .fas {
+            font-weight: 900;
+        }
+        .fa-angle-right:before {
+            content: '\f105';
+        }
+        .fa, .fab, .fal, .far, .fas {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        } 
+        a{
+            text-decoration: none;
+            transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        
+
+        
+        .fp-tableCell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+        .fp-section.fp-table, .fp-slide.fp-table {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+        .fp-section {
+            position: relative;
+            box-sizing: border-box;
+        }
+        .section {
+            position: relative;
+            text-align: center;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            display: table;
+            table-layout: fixed;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        /* 배경 이미지 */
+        .section_bg.fade {
+             opacity: 0.85; /*요소 불투명하게 */
+        }
+        .ease:hover {
+            -webkit-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -webkit-transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease;
+            -ms-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -ms-transition-duration: 0.5s;
+            -ms-transition-timing-function: ease;
+            -ms-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -ms-transition-duration: 0.5s;
+            -ms-transition-timing-function: ease;
+            -o-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -o-transition-duration: 0.5s;
+            -o-transition-timing-function: ease;
+            transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+        .section_bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            text-align: center;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            overflow: hidden;
+            opacity: 0.7;
+        }
+        .ease {
+            -webkit-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -webkit-transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease;
+            -ms-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -ms-transition-duration: 0.5s;
+            -ms-transition-timing-function: ease;
+            -ms-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -ms-transition-duration: 0.5s;
+            -ms-transition-timing-function: ease;
+            -o-transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            -o-transition-duration: 0.5s;
+            -o-transition-timing-function: ease;
+            transition-property: width,height,background-color,font-size,left,top,right,bottom,border,color,margin,opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+        /* 배경 이미지  끝*/
+        html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+            margin: 0;
+            padding: 0;
+        }
+        #section1_wrap {
+            
+            position: absolute;
+            left: 50%;
+            margin-left: -40%;
+            width: 80%;
+            top: 46%;
+            margin-top: -140px;
+            z-index: 9999;
+        }
+        #section1_wrap .text {
+            color: black;
+            text-align: center;
+        }
+        #section1_title01 {
+            
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+        #section1_title02 {
+            font-size: 32px;
+            letter-spacing: 6px;
+            margin-bottom: 15px;
+        }
+        #section1_title03 {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.8px;
+            margin-bottom: 70px;
+            text-align: center;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .text span:hover {
+            background: rgba(0,0,0,1);
+            color: #fff;
+        }
+
+        .text span { /*go about me 버튼 스타일*/
+            width: 200px;
+            line-height: 34px;
+            font-size: 16px;
+            padding: 7px;
+            border: 2px solid #000;
+            display: inline-block;
+            background: rgba(255,255,255,0.6);
+            color: black;
+            font-weight: 700;
+            text-align: center;
+        }
+        .text {
+            display: none;
+            font-weight: 300;
+            color: black;
+        }
+        body, code {
+        font: 12px Roboto,Nanum Gothic,Arial,verdana,sans-serif;
+        color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="left" style="display: block;">
+        <ul id="left_menu" class="nav accordion">
+            <li class="logo">
+                <a href="#">
+                    <img src="images/profiledd.png" alt>
+                </a>
+                
+            </li>
+            <li class="Profile">
+                <a href="#">
+                    <span></span>
+                    Profile
+                </a>
+            </li>
+            <li class="Interest" >
+                <a href="#">
+                    <span></span>
+                    Interest
+                </a>
+            </li>
+            <li class="Experience">
+                <a href="#">
+                    <span></span>
+                    Experience
+                </a>
+            </li>
+            <li class="Determination">
+                <a href="#" >
+                    <span></span>
+                    Determination
+                </a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a class="cs_center" href="#">
+                    <span></span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    NameCard<br> 
+                </a>
+                <a class="cs_center" href="http://www.instagram.com/qkr0677">
+                    <span></span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    Instagram
+                </a>
+                <a class="cs_center" href="mailto:qkr0677@gmail.com" target="_blank">
+                    <span></span>
+                    <i aria-hidden="true"></i>
+                    qkr0677@gmail.com
+                </a>
+            </li>
+        </ul>
+
+    </div>
+        
+
+            <!--메인 화면-->
+    <div id="fullpage" class="fullpage-wrapper" style="height: 100%;
+    position: relative; touch-action: none; transform: translate3d(0px,0px,0px); transition:all 800ms ease 0s;"> <!--스크롤까지 처리할 부분임 쌉쌉 메인 틀-->
+        <!-- 첫번째 섹션의 텍스트와 링크 부분-->
+        <div class="section fp-section fp-table active fp-completely" id="section1" data-anchor="01" style="height: 674px;">
+            <div class="fp-tableCell" style="height: 722px;">
+                <div id="section1_wrap">
+                    <div id="section1_title01" class="text" style="display:block;">
+                        Web design by</div>
+                    <div id="section1_title02" class="text" style="display:block;">
+                        <strong>Kenny</strong>_The Value Maker</div><!--challenging programer-->
+                    <div id="section1_title03" class="text" style="display:block;">
+                        스스로 몰입하고 주도적으로 일합니다. 가보지 않은 길을 두려워하지 않습니다.<br>
+                         무엇이든 본질만 남기고 처음부터 다시 생각해 봅니다. 나보다 동료의 생각이 <br>
+                         더 옳을 수 있다는 믿음을 가집니다. 세상을 선하게 바꾸려고 노력합니다.
+                        <br>
+                        <br>
+                        <strong>Programmer 근우</strong>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div id="section1_title04" class="text" style="display:block;">
+                        <a href="#">
+                            <span class="ease">go about me</span>
+                        </a>
+                    </div>    
+                </div>
+                <!-- 첫번째 섹션의 배경이미지 부분 -->
+                <div id="section1_bg" class="section_bg ease fade" style="background-image: url(images/카카오.jpg);"></div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
