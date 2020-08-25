@@ -53,6 +53,7 @@
         }
         div {
             display: block;
+            font-family: Noto Sans KR,sans-serif;
         }
         /* 메인 밑 about me */
         .about_me {
@@ -337,6 +338,7 @@
             margin-bottom: 3em;
         }
         .Row {
+            font-family: Noto Sans KR,sans-serif;
             display: flex;
             flex-wrap: wrap;
         }
@@ -360,16 +362,19 @@
             height: 360px;
         }
         .Box_info {
-            font-family: Gothic A1,sans-serif;
+            
             padding: 14px;
+            font-family: Noto Sans KR,sans-serif;
         }
         .name {
             font-weight: 500;
         }
         .Box_content, .name {
             font-size: 1.3em;
+            font-family: Noto Sans KR,sans-serif;
         }
         p {
+            font-family: Noto Sans KR,sans-serif;
             display: block;
             margin-block-start: 1em;
             margin-block-end: 1em;
@@ -387,6 +392,31 @@
             margin: 0px auto; 
             position: relative; 
         }
+
+        .Contact {
+            font-family: Roboto,sans-serif;
+            height: 50vh;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .Contact_hedding {
+            font-family: Noto Sans KR,sans-serif;
+            position: relative;
+            display: inline-block;
+            font-size: 2.4em;
+            font-weight: 400;
+            margin: 30px 0;
+        }
+        .Email {
+            font-size: 1.9em;
+            font-weight: 500;
+        }
+        .Github {
+            width: 78px;
+            height: 90px;
+        }
     </style>
 </head>
 <body>
@@ -399,25 +429,25 @@
                 
             </li>
             <li class="Profile">
-                <a href="#" onclick="window.location.href='/company/about.html'">
+                <a href="Profile.html">
                     <span></span>
                     Profile
                 </a>
             </li>
             <li class="Interest" >
-                <a href="#">
+                <a href="Interest.html">
                     <span></span>
                     Interest
                 </a>
             </li>
             <li class="_Experience">
-                <a href="#">
+                <a href="Experience.html">
                     <span></span>
                     Experience
                 </a>
             </li>
             <li class="Determination">
-                <a href="#" >
+                <a href="Determination.html" >
                     <span></span>
                     Determination
                 </a>
@@ -463,7 +493,7 @@
         <div class="about_me_content">
             <h2 class="wow fadeInUp">잘하는 개발자</h2>
             <section class="about_me_section wow fadeInUp">
-                <p>
+                <p >
                     어릴때 부터 호기심이 많은 성격에 만들어 보았던 간단한 계산기
                      프로그램으로 무언가를 만드는 것의 재미를 느끼게 되었고 
                      그때부터 개발자를 꿈꾸게 되었습니다. 그래서 대학교도 
@@ -495,7 +525,7 @@
             <br>
             <br>
             <br>
-            <h2><span class=" wow fadeInUp">스스로 몰입하고 주도적으로 일합니다.</span></h2><br><br>
+            <h2><span class=" wow bounceInUp">스스로 몰입하고 주도적으로 일합니다.</span></h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             
             <div class="Row">
                 <div class="Box wow fadeInUp">
@@ -572,7 +602,7 @@
 
 
         <div class="Container">
-            <h2><span class="wow bounceInUp">가보지 않은 길을 두려워하지 않습니다.</span></h2><br><br>
+            <h2><span class="wow bounceInUp"><br><br><br>가보지 않은 길을 두려워하지 않습니다.</span></h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="Row">
                 <div class="Box wow fadeInUp">
                     <div class="Box_image">
@@ -612,7 +642,7 @@
         <br>
 
         <div class="Container">
-            <h2><span class="wow bounceInUp">나보다 동료의 생각이 더 옳을 수 있다는 믿음을 가집니다.</span></h2><br><br>
+            <h2><span class="wow bounceInUp"><br><br><br>나보다 동료의 생각이 더 옳을 수 있다는 믿음을 가집니다.</span></h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="Row">
                 <div class="Box wow fadeInUp">
                     <div class="Box_image">
@@ -635,7 +665,7 @@
 
 
         <div class="Container">
-            <h2><span class="wow bounceInUp">세상을 선하게 바꾸려고 노력합니다.</span></h2><br><br>
+            <h2><span class="wow bounceInUp"><br><br><br>세상을 선하게 바꾸려고 노력합니다.</span></h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="Row">
                 <div class="Box wow fadeInUp">
                     <div class="Box_image">
@@ -660,6 +690,15 @@
 
     </div>
 
+    <div class="Contact" id="c">
+        <h1 class="Contact_hedding">
+            CONTACT!
+        </h1>
+        <p class="Email">Email : qkr0677@gmail.com</p>
+        <a href="https://github.com/qkr0677?tab=repositories">
+            <img src="githubicon.png" alt="github" class="Github">
+        </a>
+    </div>
 
 
 
